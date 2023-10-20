@@ -12,14 +12,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     
-    <link rel="stylesheet" href="C:\Users\hp\OneDrive\Desktop\learning\Static\task1.css">
+    <link rel="stylesheet" href="../Static/task1.css">
 
 </head>
 <body>
  
         
             <div class="navim">
-              <img src="C:\Users\hp\OneDrive\Desktop\learning\images\banner2.jpg" style="height: 500px;" class="card-img-top" alt="...">
+              <img src="../images/\banner2.jpg" style="height: 500px;" class="card-img-top" alt="...">
                 
               <div class="nav-pos">
               <nav class="navbar navbar-expand-lg navbar-dark navtext">
@@ -41,8 +41,9 @@
                             <a class="nav-link" href="user-managment.html">Contact</a>
                           </li>
                         </ul>
-                        <button class="navbtn mx-2">LogIn</button>
-                        <button class="navbtn">SignUp</button>
+                        <a href="./templates/login.html"></a><button  class="navbtn mx-2">LogIn</button></a>
+
+                        <a href="./templates/signup.html"><button  class="navbtn">SignUp</button> </a>
                       </div>
                     </div>
                   </nav>
@@ -74,7 +75,7 @@
                         <div class="card text-center" >
                             <img src="../images/instagram-03.jpg" class="card-img-top cardimg" alt="...">
                             <div class="card-body">
-                              <h5 class="card-title">Women</h5>
+                              <h5 class="card-title" title="kis are cute">Women</h5>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                               <a href="#" class="btn cardbtn mx-auto">Next</a>
                             </div>
@@ -84,7 +85,7 @@
                         <div class="card text-center">
                             <img src="../images/kid-03.jpg" class="card-img-top cardimg" alt="...">
                             <div class="card-body">
-                              <h5 class="card-title">Kid</h5>
+                              <h5 class="card-title" data-bs-toggle="tooltip" data-bs-placement="top" title="Women got power">Kid</h5>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                               <a href="#" class="btn cardbtn mx-auto">Next</a>
                             </div>
@@ -94,7 +95,7 @@
                         <div class="card text-center">
                             <img src="../images/men-01.jpg" class="card-img-top cardimg" alt="...">
                             <div class="card-body">
-                              <h5 class="card-title">Men</h5>
+                              <h5 class="card-title" data-bs-toggle="tooltip" data-bs-placement="top" title="Men are gentlemen">Men</h5>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                               <a href="#" class="btn cardbtn mx-auto">Next</a>
                             </div>
@@ -111,6 +112,12 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+    </script>
 </body>
 </html>

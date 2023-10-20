@@ -90,3 +90,14 @@
 .card-pos{
     margin-top: -90px; 
 }
+
+.custom-tooltip {
+    background-color: #4D3C77; /* Change the background color */
+    color: #FFF; /* Change the text color */
+    border: 2px solid #E74C3C; /* Change the border color and size */
+    border-radius: 5px; /* Round the corners */
+    padding: 5px 10px; /* Adjust the padding for spacing */
+    font-size: 14px; /* Change the font size */
+    /* Add more custom styles as needed */
+  }
+  
