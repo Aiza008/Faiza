@@ -12,9 +12,9 @@
     right:0px
 }
 
-.mtop{
+/* .mtop{
     margin-top: 4rem;
-}
+} */
 
 .navtext{
     color: white;
@@ -101,3 +101,11 @@
     /* Add more custom styles as needed */
   }
   
+
+.modal-style{
+    color:white;
+    background-image: linear-gradient(to right,#3ec7e0,#e05b98)
+}
+@media screen {
+    
+}

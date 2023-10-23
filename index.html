@@ -6,11 +6,16 @@
     <title>User Managment</title>
 
     <!-- Bootstrap 5 CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
 
     <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     
     <link rel="stylesheet" href="../Static/task1.css">
 
@@ -41,21 +46,21 @@
                             <a class="nav-link" href="user-managment.html">Contact</a>
                           </li>
                         </ul>
-                        <a href="./templates/login.html"></a><button  class="navbtn mx-2">LogIn</button></a>
+                        <a href="./templates/login.html"><button  class="navbtn mx-2">LogIn</button></a>
 
                         <a href="./templates/signup.html"><button  class="navbtn">SignUp</button> </a>
                       </div>
                     </div>
                   </nav>
 
-                  <div class="container navtext">
-                    <div class="row mtop">
+                  <div class="container-fluid navtext">
+                    <div class="row mt-5 ms-5">
                       <div class="col-sm-3">
                         <h2 class="animate__animated animate__bounce animate__backInLeft">Welcome Here</h2>
                       </div>
                     </div>
 
-                    <div class="row mt-3">
+                    <div class="row mt-3 ms-5 ">
                       <div class="col-sm-5">
                         <p class="animate__animated animate__bounce animate__fadeInBottomLeft">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea veritatis, distinctio alias veniam molestiae porro beatae id adipisci voluptates facere, repudiandae ipsum incidunt nemo, ipsam harum vero. </p>
                       </div>
@@ -73,31 +78,31 @@
                 <div class="row">
                     <div class="col-md-4 mb-3">
                         <div class="card text-center" >
-                            <img src="../images/instagram-03.jpg" class="card-img-top cardimg" alt="...">
+                            <img src="../images/instagram-03.jpg" class="card-img-top cardimg mt-3" alt="...">
                             <div class="card-body">
                               <h5 class="card-title" title="kis are cute">Women</h5>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn cardbtn mx-auto">Next</a>
+                              <button type="button" class="btn cardbtn mx-auto" data-bs-toggle="modal" data-bs-target="#ModalWomen">Next</button>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
                         <div class="card text-center">
-                            <img src="../images/kid-03.jpg" class="card-img-top cardimg" alt="...">
+                            <img src="../images/kid-03.jpg" class="card-img-top cardimg  mt-3" alt="...">
                             <div class="card-body">
                               <h5 class="card-title" data-bs-toggle="tooltip" data-bs-placement="top" title="Women got power">Kid</h5>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn cardbtn mx-auto">Next</a>
+                              <button type="button" class="btn cardbtn mx-auto" data-bs-toggle="modal" data-bs-target="#ModalKid">Next</button>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-3">
                         <div class="card text-center">
-                            <img src="../images/men-01.jpg" class="card-img-top cardimg" alt="...">
+                            <img src="../images/men-01.jpg" class="card-img-top cardimg  mt-3" alt="...">
                             <div class="card-body">
                               <h5 class="card-title" data-bs-toggle="tooltip" data-bs-placement="top" title="Men are gentlemen">Men</h5>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn cardbtn mx-auto">Next</a>
+                              <button type="button" class="btn cardbtn mx-auto" data-bs-toggle="modal" data-bs-target="#ModalMen">Next</button>
                             </div>
                         </div>
                     </div>
@@ -107,6 +112,67 @@
           <br/>
           <br/>
           <br/>
+
+
+          <!-- Modal -->
+          <div class="modal fade" id="ModalMen" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content text-center modal-style">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../images/young-man.avif" class="card-img-top cardimg" alt="...">
+                  <h2 class="mt-2">Men</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, voluptatem error? Aut atque soluta consequatur. Soluta, magni, cupiditate laudantium molestias modi ipsam distinctio minus laboriosam sapiente consequuntur laborum odit ullam illum eius officia esse architecto eaque? Facere, est. Ipsum similique, ea veritatis ipsam hic deserunt corporis distinctio? Facere, corrupti explicabo.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary navbtn" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="ModalWomen" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content text-center modal-style">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../images/young-woman.avif" class="card-img-top cardimg" alt="...">
+                  <h2 class="mt-2">Women</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, voluptatem error? Aut atque soluta consequatur. Soluta, magni, cupiditate laudantium molestias modi ipsam distinctio minus laboriosam sapiente consequuntur laborum odit ullam illum eius officia esse architecto eaque? Facere, est. Ipsum similique, ea veritatis ipsam hic deserunt corporis distinctio? Facere, corrupti explicabo.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary navbtn" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" id="ModalKid" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content text-center modal-style">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="../images/kid.avif" class="card-img-top cardimg" alt="...">
+                  <h2 class="mt-2">Kid</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, voluptatem error? Aut atque soluta consequatur. Soluta, magni, cupiditate laudantium molestias modi ipsam distinctio minus laboriosam sapiente consequuntur laborum odit ullam illum eius officia esse architecto eaque? Facere, est. Ipsum similique, ea veritatis ipsam hic deserunt corporis distinctio? Facere, corrupti explicabo.</p>
+                </div>
+                <div class="modal-footer ">
+                  <button type="button" class="btn btn-secondary navbtn" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
         
 
@@ -118,6 +184,9 @@
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
 })
-    </script>
+    </script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
 </body>
 </html>
